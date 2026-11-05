@@ -1,0 +1,5 @@
+{
+ "rule": "public pages never address the owner or carry agent instructions, to-dos or internal notes; neutral third-person only",
+ "strict": [],
+ "flags": []
+}

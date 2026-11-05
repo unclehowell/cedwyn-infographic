@@ -1,0 +1,1482 @@
+[
+ {
+  "n": 1,
+  "placed": false,
+  "status": "in the homestead group by the church; the small figures there cannot be read on the screenshot (the group is mapped as one parcel, \"homestead group\")",
+  "extra": "The homestead group by the church (numbers 1-4 together, the small figures unread) matches 1841 tithe plots 209 (Courtyard &c, Arable, 3R 13P - Bute / Williams John) and 210 (Pasture, 1R 6P - Homfray / Jenkins William)."
+ },
+ {
+  "n": 2,
+  "placed": false,
+  "status": "in the homestead group by the church; the small figures there cannot be read on the screenshot (the group is mapped as one parcel, \"homestead group\")",
+  "extra": "The homestead group by the church (numbers 1-4 together, the small figures unread) matches 1841 tithe plots 209 (Courtyard &c, Arable, 3R 13P - Bute / Williams John) and 210 (Pasture, 1R 6P - Homfray / Jenkins William)."
+ },
+ {
+  "n": 3,
+  "placed": false,
+  "status": "in the homestead group by the church; the small figures there cannot be read on the screenshot (the group is mapped as one parcel, \"homestead group\")",
+  "extra": "The homestead group by the church (numbers 1-4 together, the small figures unread) matches 1841 tithe plots 209 (Courtyard &c, Arable, 3R 13P - Bute / Williams John) and 210 (Pasture, 1R 6P - Homfray / Jenkins William)."
+ },
+ {
+  "n": 4,
+  "placed": false,
+  "status": "in the homestead group by the church; the small figures there cannot be read on the screenshot (the group is mapped as one parcel, \"homestead group\")",
+  "extra": "The homestead group by the church (numbers 1-4 together, the small figures unread) matches 1841 tithe plots 209 (Courtyard &c, Arable, 3R 13P - Bute / Williams John) and 210 (Pasture, 1R 6P - Homfray / Jenkins William)."
+ },
+ {
+  "n": 5,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "193 (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 2R 10P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Rees Thomas"
+   ],
+   [
+    "OS grid reference",
+    "ST 16898 73248"
+   ]
+  ],
+  "traced": "0.92",
+  "jw": false
+ },
+ {
+  "n": 6,
+  "reading": "Figure read as 6 - not fully clear on the plan",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "193"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 2R 10P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Rees Thomas"
+   ],
+   [
+    "OS grid reference",
+    "ST 16941 73309"
+   ]
+  ],
+  "traced": "2.85",
+  "jw": false
+ },
+ {
+  "n": 7,
+  "reading": "Figure read as 7 - not fully clear on the plan",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "211"
+   ],
+   [
+    "Land use (1841)",
+    "Orchard"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 3R 19P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16801 73349"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 211)"
+   ]
+  ],
+  "traced": "1.88",
+  "jw": true
+ },
+ {
+  "n": 8,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "215; 218"
+   ],
+   [
+    "Field name (1841)",
+    "; "
+   ],
+   [
+    "Land use (1841)",
+    "Meadow; Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "5A 2R 39P; 3A 23P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of; Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John; Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16920 73458"
+   ]
+  ],
+  "traced": "15.81",
+  "jw": true
+ },
+ {
+  "n": 9,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "214a (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "25A 1R 21P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Rees Thomas"
+   ],
+   [
+    "OS grid reference",
+    "ST 17066 73552"
+   ]
+  ],
+  "traced": "1.08",
+  "jw": false
+ },
+ {
+  "n": 10,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "216"
+   ],
+   [
+    "Land use (1841)",
+    "Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "7A 3R 10P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 17052 73735"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 216)"
+   ]
+  ],
+  "traced": "7.47",
+  "jw": true
+ },
+ {
+  "n": 11,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "217; 262"
+   ],
+   [
+    "Field name (1841)",
+    "; "
+   ],
+   [
+    "Land use (1841)",
+    "Meadow; Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 3R 38P; 1R 10P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of; Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John; Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16808 73597"
+   ]
+  ],
+  "traced": "4.81",
+  "jw": true
+ },
+ {
+  "n": 12,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "265"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 2R"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16563 73867"
+   ]
+  ],
+  "traced": "1.63",
+  "jw": true
+ },
+ {
+  "n": 13,
+  "reading": "Figure read as 13 - not fully clear on the plan",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "288 (by overlap, label outside)"
+   ],
+   [
+    "Field name (1841)",
+    "Salt marsh"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "3R 8P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Jenkins Lewis"
+   ],
+   [
+    "OS grid reference",
+    "ST 16374 73929"
+   ]
+  ],
+  "traced": "0.47",
+  "jw": false
+ },
+ {
+  "n": 14,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "266"
+   ],
+   [
+    "Land use (1841)",
+    "Wood"
+   ],
+   [
+    "Area as entered (1841)",
+    "16A 33P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16304 73851"
+   ]
+  ],
+  "traced": "15.41",
+  "jw": true
+ },
+ {
+  "n": 15,
+  "reading": "Figure read as 15 - not fully clear on the plan",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "269"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Evans Revd James"
+   ],
+   [
+    "OS grid reference",
+    "ST 16189 73848"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 269)"
+   ]
+  ],
+  "traced": "1.14",
+  "jw": false
+ },
+ {
+  "n": 16,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "270"
+   ],
+   [
+    "Land use (1841)",
+    "Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "4A 2R 1P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Evans Revd James"
+   ],
+   [
+    "OS grid reference",
+    "ST 16074 73698"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 270)"
+   ]
+  ],
+  "traced": "4.67",
+  "jw": false
+ },
+ {
+  "n": 17,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "272; 273; 274; 271"
+   ],
+   [
+    "Field name (1841)",
+    "; ; ; Parsonage"
+   ],
+   [
+    "Land use (1841)",
+    "Arable; Wood; Meadow; Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "5A 2R 25P; 1A 32P; 32A 14P; 1A 2R"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of; Bute the Marquess of; Taff Vale Railway; Evans the Revd James (Glebe)"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Evans Revd James; Evans Revd James; Morgan Mary; Evans the Revd James (Glebe)"
+   ],
+   [
+    "OS grid reference",
+    "ST 16226 73680"
+   ]
+  ],
+  "traced": "6.5",
+  "jw": false
+ },
+ {
+  "n": 18,
+  "placed": false,
+  "status": "no figure 18 could be read on the screenshot; it may be one of the two unread parcels (A, B)",
+  "extra": "The two parcels whose figures could not be read: A - a wooded strip between parcels 8, 27 and 28 (tithe plot 219, Wood, 1A 3R 38P - Bute / Williams John); B - a field between parcels 29 and 30 (tithe plot 221 by overlap, Arable, 3A 19P - Bute / Williams John). Parcel 18 may be one of these."
+ },
+ {
+  "n": 19,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "272 (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "5A 2R 25P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Evans Revd James"
+   ],
+   [
+    "OS grid reference",
+    "ST 16289 73708"
+   ]
+  ],
+  "traced": "0.7",
+  "jw": false
+ },
+ {
+  "n": 20,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "268"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "2A 2R 10P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Evans Revd James"
+   ],
+   [
+    "OS grid reference",
+    "ST 16276 73801"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 268)"
+   ]
+  ],
+  "traced": "2.59",
+  "jw": false
+ },
+ {
+  "n": 21,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "267"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "4A 1R 25P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16414 73754"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 267)"
+   ]
+  ],
+  "traced": "4.67",
+  "jw": true
+ },
+ {
+  "n": 22,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "264"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "2A 2R 26P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16555 73742"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 264)"
+   ]
+  ],
+  "traced": "2.41",
+  "jw": true
+ },
+ {
+  "n": 23,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "263 (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "8A 34P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16590 73686"
+   ]
+  ],
+  "traced": "7.33",
+  "jw": true
+ },
+ {
+  "n": 24,
+  "reading": "Figure read as 24 - not fully clear on the plan",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "263 (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "8A 34P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16563 73602"
+   ]
+  ],
+  "traced": "1.3",
+  "jw": true
+ },
+ {
+  "n": 25,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "263"
+   ],
+   [
+    "Land use (1841)",
+    "Meadow"
+   ],
+   [
+    "Area as entered (1841)",
+    "8A 34P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16422 73640"
+   ]
+  ],
+  "traced": "3.15",
+  "jw": true
+ },
+ {
+  "n": 26,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "260"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "6A 2R 10P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16418 73524"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 260)"
+   ]
+  ],
+  "traced": "6.93",
+  "jw": true
+ },
+ {
+  "n": 27,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "261"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "2A 2R 19P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16607 73520"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 261)"
+   ]
+  ],
+  "traced": "3.2",
+  "jw": true
+ },
+ {
+  "n": 28,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "220"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "4A 2R 5P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16604 73430"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 220)"
+   ]
+  ],
+  "traced": "3.97",
+  "jw": true
+ },
+ {
+  "n": 29,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "221"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "3A 19P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16591 73366"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 221)"
+   ]
+  ],
+  "traced": "2.97",
+  "jw": true
+ },
+ {
+  "n": 30,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "222"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "2R 34P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16729 73282"
+   ]
+  ],
+  "traced": "0.67",
+  "jw": true
+ },
+ {
+  "n": 31,
+  "reading": "Figure read as 31? (the figure is unclear)",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "186 (by overlap, label outside)"
+   ],
+   [
+    "Field name (1841)",
+    "Cottage & garden"
+   ],
+   [
+    "Area as entered (1841)",
+    "1R"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Evans Evans"
+   ],
+   [
+    "OS grid reference",
+    "ST 16793 73277"
+   ]
+  ],
+  "traced": "0.36",
+  "jw": false
+ },
+ {
+  "n": 32,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "207"
+   ],
+   [
+    "Field name (1841)",
+    "Cottage & garden"
+   ],
+   [
+    "Land use (1841)",
+    "Garden"
+   ],
+   [
+    "Area as entered (1841)",
+    "2R 30P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Sprackett John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16716 73178"
+   ]
+  ],
+  "traced": "0.68",
+  "jw": false
+ },
+ {
+  "n": 33,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "223"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "8A 30P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16588 73215"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 223)"
+   ]
+  ],
+  "traced": "8.34",
+  "jw": true,
+  "alignNote": "an earlier note about an unnumbered 8a row is closed by reading the library's apportionment page: the 8a 0r 30p line sits against plot 223, with a one-line offset between the number column and the use and area block. That line was read by alignment, so the land-use word against 223 (arable) is not independently settled."
+ },
+ {
+  "n": 34,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "256"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "3A 1R 23P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16460 73335"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 256)"
+   ]
+  ],
+  "traced": "3.37",
+  "jw": true
+ },
+ {
+  "n": 35,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "246"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "4A 1R 36P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16438 73214"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 246)"
+   ]
+  ],
+  "traced": "3.56",
+  "jw": true
+ },
+ {
+  "n": 36,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "204"
+   ],
+   [
+    "Field name (1841)",
+    "Old land"
+   ],
+   [
+    "Land use (1841)",
+    "Waste"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 2R 4P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Evans Revd James"
+   ],
+   [
+    "OS grid reference",
+    "ST 16453 73092"
+   ]
+  ],
+  "traced": "1.12",
+  "jw": false
+ },
+ {
+  "n": 37,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "245 (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "4A 37P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16355 73107"
+   ]
+  ],
+  "traced": "1.38",
+  "jw": true
+ },
+ {
+  "n": 38,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "245 (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "4A 37P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16351 73160"
+   ]
+  ],
+  "traced": "1.3",
+  "jw": true
+ },
+ {
+  "n": 39,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "250a"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 2R 25P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams James"
+   ],
+   [
+    "OS grid reference",
+    "ST 16010 73093"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 250a)"
+   ]
+  ],
+  "traced": "1.58",
+  "jw": false
+ },
+ {
+  "n": 40,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "252"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "3A 6P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16137 73317"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 252)"
+   ]
+  ],
+  "traced": "2.9",
+  "jw": true
+ },
+ {
+  "n": 41,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "255"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 2R 28P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16317 73294"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 255)"
+   ]
+  ],
+  "traced": "0.95",
+  "jw": true
+ },
+ {
+  "n": 42,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "258 (by overlap, label outside)"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "2R 9P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16284 73381"
+   ]
+  ],
+  "traced": "1.25",
+  "jw": true
+ },
+ {
+  "n": 43,
+  "reading": "Figure read as 43 - not fully clear on the plan",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "258"
+   ],
+   [
+    "Land use (1841)",
+    "Pasture"
+   ],
+   [
+    "Area as entered (1841)",
+    "2R 9P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16270 73440"
+   ]
+  ],
+  "traced": "0.39",
+  "jw": true
+ },
+ {
+  "n": 44,
+  "reading": "Figure read as 44 - not fully clear on the plan",
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "259"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "1A 21P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16324 73461"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 259)"
+   ]
+  ],
+  "traced": "0.91",
+  "jw": true
+ },
+ {
+  "n": 45,
+  "placed": true,
+  "rows": [
+   [
+    "1841 tithe plot",
+    "257"
+   ],
+   [
+    "Land use (1841)",
+    "Arable"
+   ],
+   [
+    "Area as entered (1841)",
+    "3A 1R 9P"
+   ],
+   [
+    "Landowner as entered (1841)",
+    "Bute the Marquess of"
+   ],
+   [
+    "Occupier as entered (1841)",
+    "Williams John"
+   ],
+   [
+    "OS grid reference",
+    "ST 16358 73393"
+   ],
+   [
+    "Outline taken from",
+    "1841 tithe boundaries (plot 257)"
+   ]
+  ],
+  "traced": "2.26",
+  "jw": true
+ },
+ {
+  "n": 46,
+  "placed": false,
+  "status": "no parcel is independently identified under this number: no figure reads clearly as 46 on the photograph we hold, and no alternate reading covers it; unsettled at this resolution"
+ },
+ {
+  "n": 47,
+  "placed": false,
+  "status": "no parcel is independently identified under this number: no figure reads clearly as 47 on the photograph we hold, and no alternate reading covers it; unsettled at this resolution"
+ },
+ {
+  "n": 48,
+  "placed": false,
+  "status": "no parcel is independently identified under this number: no figure reads clearly as 48 on the photograph we hold, and no alternate reading covers it; unsettled at this resolution"
+ },
+ {
+  "n": 49,
+  "placed": false,
+  "status": "no parcel is independently identified under this number: no figure reads clearly as 49 on the photograph we hold, and no alternate reading covers it; unsettled at this resolution"
+ },
+ {
+  "n": 50,
+  "aliasOf": 30
+ },
+ {
+  "n": 51,
+  "placed": false,
+  "status": "no parcel is independently identified under this number: no figure reads clearly as 51 on the photograph we hold, and no alternate reading covers it; unsettled at this resolution"
+ },
+ {
+  "n": 52,
+  "aliasOf": 32
+ },
+ {
+  "n": 53,
+  "aliasOf": 33
+ },
+ {
+  "n": 54,
+  "aliasOf": 34
+ },
+ {
+  "n": 55,
+  "aliasOf": 35
+ },
+ {
+  "n": 56,
+  "aliasOf": 36
+ },
+ {
+  "n": 57,
+  "aliasOf": 37
+ },
+ {
+  "n": 58,
+  "aliasOf": 38
+ },
+ {
+  "n": 59,
+  "aliasOf": 39
+ }
+]
