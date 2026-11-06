@@ -8,6 +8,7 @@
 <meta property="og:title" content="Great House Farm · the land changing hands">
 <meta property="og:description" content="In: A + B on the root title chain. Out: synthetic A3 and B, plus SA1 and SA2. The same 59 parcels under every map, each with a status colour and its identifying trait.">
 <meta name="theme-color" content="#151229">
+<meta name="ig-build" content="__BUILD__">
 <style>
 :root{--bg:#151229;--panel:#1d1938;--line:#ffffff1f;--ink:#f3f1ff;--muted:#b9b4d6;--accent:#ffd166}
 *{box-sizing:border-box}
@@ -137,7 +138,7 @@ footer{margin-top:22px;text-align:center;color:var(--muted);font-size:14px}
 <div class="lrow"><span class="ic" style="display:flex;gap:4px;justify-content:center"><span class="dot g"></span><span class="dot a"></span><span class="dot r"></span></span><span>By each parcel number: green, concrete info for that number (figure clearly read in the site’s 1824 reading record and placed on the plan, with its record); amber, something held even if ambiguous; red, nothing held for that number yet. A tithe match in a bracket is the site’s own reading</span></div>
 <div class="lrow mo"><span class="ic"><svg width="40" height="10" aria-hidden="true"><line x1="2" y1="5" x2="38" y2="5" stroke="#e7c6ff" stroke-width="4" stroke-dasharray="6 5"/></svg></span><span>Dashed: the deed or record is not published here</span></div>
 <div class="lrow mo"><span class="ic" style="font-weight:800;font-size:14px">1938</span><span>Each year sits where the line arrives</span></div>
-<p class="ver">v3.9.0 · 6 Nov 2026</p>
+<p class="ver">v3.10.0 · 6 Nov 2026</p>
 </section>
 </main>
 <footer data-ghf-keep>© the Williams-Buckler family of Tŷ Mawr · <a href="https://bucklerfamily.estate/licence/">Licence</a></footer>
@@ -496,8 +497,11 @@ function openParcel(n,map){
  h+=srcList(P_SRCS);
  showNote(h);stewartJourney(n,base)}
 
-// ---- v3.9.0: sheet-shaped parcel database, map popup, tenancy toggle (data: public/data/db/*.csv and the linked workbook) ----
-const DB0=/*__DB__*/null;let DB=DB0,PIX={},MIX={},EXTRA=[],UG=false,TEN_ON=false;
+// ---- v3.9.0/v3.10.0: parcel database, map popup, tenancy toggle. Data: data/*.json in the repo, typed by data/schema.graphql; tools/build.py compiles the page query (data/queries/db.graphql) and inlines it here ----
+// v3.10.0: the compiled query is typed (numbers, booleans, null); the drawing code reads the row-of-text shape it was written for
+function igRows(o){if(!o)return null;const s=v=>v==null?'':v===true?'yes':v===false?'no':String(v);const out={v:o.v||''};
+ for(const t of ['maps','parcels','title_events','settings'])out[t]=(o[t]||[]).map(r=>{const x={};for(const k in r)x[k]=s(r[k]);return x});return out}
+const DB0=igRows(/*__DB__*/null);let DB=DB0,PIX={},MIX={},EXTRA=[],UG=false,TEN_ON=false;
 document.addEventListener('pointerdown',()=>{UG=true},{once:true,capture:true});document.addEventListener('keydown',()=>{UG=true},{once:true,capture:true});
 C.T=C.T||'#7fe0d0';
 function csvParse(t){const R=[];let row=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];
@@ -578,16 +582,6 @@ $('#mapBtn').onclick=()=>{const mid=msel.value==='model'?'stewart':msel.value,m=
   const d=box.querySelector('.mk');if(d)d.remove();
   if(r&&r.mark_x!==''){const k=document.createElement('span');k.className='mk';k.style.left=Math.round((+r.mark_x-x)*W0*scale)+'px';k.style.top=Math.round((+r.mark_y-y)*H0*scale)+'px';box.appendChild(k)}};
  if(img.complete)lay();else img.onload=lay;$('#mwhole').onclick=()=>{whole=!whole;$('#mwhole').textContent=whole?'Crop':'Whole map';lay()}};
-// live database: the linked workbook first, then the CSV copy beside the page; the inline copy stays if neither answers
-async function loadDB(){const src=DB0&&DB0.source||{},tabs=['maps','parcels','title_events','settings'],out={};
- const get=async t=>{if(src.sheet_id){const ok=x=>x.length&&('map_id' in x[0]||'event_id' in x[0]||'key' in x[0]);const base=`https://docs.google.com/spreadsheets/d/${src.sheet_id}/`;const urls=[];if(src.gids&&src.gids[t]!=null)urls.push(base+`export?format=csv&gid=${src.gids[t]}`);urls.push(base+`gviz/tq?tqx=out:csv&headers=1&sheet=${encodeURIComponent(t)}`);for(const u of urls){try{const r=await fetch(u,{cache:'no-store'});if(r.ok){const x=csvParse(await r.text());if(ok(x))return [x,'sheet']}}catch(e){}}}
-  try{const r=await fetch(`data/db/${t}.csv?cb=${Date.now()}`,{cache:'no-store'});if(r.ok)return [csvParse(await r.text()),'repo']}catch(e){}return [null,'']};
- let from='';for(const t of tabs){const [x,w]=await get(t);if(!x||!x.length){if(t==='settings'){out[t]=DB.settings||[];continue}return}out[t]=x;from=from||w}
- out.source=src;out.loaded_from=from;
- const sig=o=>JSON.stringify([o.maps,o.parcels,o.title_events,o.settings]);if(sig(out)===sig(DB))return;
- DB=out;dbIndex();mapOpts();const before=JSON.stringify(EXTRA.map(e=>e.r));buildExtra();
- if(JSON.stringify(EXTRA.map(e=>e.r))!==before){draw();if(!survey)select(cur,false,false)}
- fillParcels();const v=pbtn.dataset.v;if(v&&!UG)choose(v)}
 dbIndex();mapOpts();buildExtra();
 
 draw();
@@ -601,7 +595,18 @@ RM.addEventListener&&RM.addEventListener('change',()=>{if(survey)return;select(c
 // the shared header (basecamp.js) loads after this page's own script has run; ghf-boot.js already reserved its band
 (function(){if(window.GHFBasecamp||document.querySelector('script[data-ghf-basecamp-late]'))return;var s=document.createElement('script');s.src='https://bucklerfamily.estate/ghf-lang/basecamp.js?v='+(window.GHFBoot||'2.1.2');s.setAttribute('data-ghf-basecamp-late','');document.head.appendChild(s)})();
 document.getElementById('replay').addEventListener('click',()=>{if(survey)return;const d=document.querySelector('details.below');if(d)d.open=true});
-loadDB();
+// v3.10.0: client-side cache. sw.js (scope /infographic/) keeps this page and its title-chain page in a versioned cache and
+// answers from it at once (repeat visits and offline), revalidating with the server in the background; the site's own worker is
+// loaded inside it, so audio and data files the site serves from its database behave as before. ?sw=off removes it.
+(function(){const N=navigator.serviceWorker;if(!N||!/^https:|^http:\/\/(localhost|127\.0\.0\.1)/.test(location.href)||!/\/$/.test(location.pathname))return;
+ const base=location.pathname.replace(/title-chain\/$/,'');
+ if(new URLSearchParams(location.search).get('sw')==='off'){N.getRegistrations().then(rs=>rs.forEach(r=>{if(new URL(r.scope).pathname===base)r.unregister()}));return}
+ const tip=()=>{if(document.getElementById('igUpd'))return;const b=document.createElement('button');b.id='igUpd';b.type='button';b.textContent='Updated records \u00b7 tap to refresh';
+  b.style.cssText='position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:9999;background:#7fe0d0;color:#151229;border:0;border-radius:18px;padding:9px 16px;font:600 14px/1.2 system-ui,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.35)';
+  b.onclick=()=>location.reload();document.body.appendChild(b)};
+ N.addEventListener('message',e=>{if(e.data&&e.data.type==='ig-updated'&&e.data.build!==(document.querySelector('meta[name=ig-build]')||{}).content)tip()});
+ addEventListener('load',()=>{N.register(base+'sw.js',{scope:base,updateViaCache:'none'}).catch(()=>{})})})();
+
 </script>
 </body>
 </html>
