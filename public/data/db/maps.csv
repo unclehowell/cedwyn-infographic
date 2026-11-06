@@ -1,0 +1,4 @@
+map_id,year,title,source,evidence_id,image,crop_x,crop_y,crop_w,crop_h,note
+model,,Working model (not a survey map),The ring of title holders on this page,,,,,,,The title lines as drawn on the ring; not a survey map.
+stewart,1824,1824 Stewart/Bute plan 19 (Glamorgan Archives DB/E/1),"Glamorgan Archives DB/E/1, plan 19 (David Stewart, surveyor); the copy shown is the uploaded image held as EV-0004",EV-0211; EV-0004,https://cedwyn.bucklerfamily.estate/wayback/images/evidence/1824-00-00_wp87_map-of-ty-mawr-dated-1824-uploaded-image.jpg,0,0.207,1,0.436,The copy shown is the uploaded 1824 map image held as EV-0004. Crops and dots are set by eye and are approximate; a dot marks where the number is written.
+tithe,1841,"1841 tithe map of Landough, Cogan and Leckwith","National Library of Wales (Edward Edmunds), with its apportionment",EV-0215,,,,,,No image of this map is held on this site yet.
