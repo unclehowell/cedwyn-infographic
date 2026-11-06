@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.9.0] - 2026-11-06
+
+### Added
+- Parcel database shaped like the family's parcel-by-year workbooks: one tab each for maps, parcels, title_events and settings (plus parties and a README), held in a linked Google Sheet and committed beside the page as `public/data/db/*.csv` with a combined `public/data/db.json`. The page reads the sheet as published CSV on each load; if it cannot, it uses the committed copy, and the build inlines that copy so the first view never waits.
+- 🗺️ Map button above the diagram: opens the chosen map in a popup, cropped to the picked parcel, with a dot on the number where one is set; "Whole map" toggles the crop. The 1824 plan shown is the uploaded image held as EV-0004. Crops are set by eye and are approximate.
+- Tenants toggle (Tenants: shown / hidden, kept in the address as `ten=1`): tenancies and leases from the title_events tab appear beside the freehold lines — the 1877 lease (reported), the 1916 Bute tenancy and the 1939 Western Ground Rents tenancy are drawn on the ring; the 1824 tenant entry and the 1841 occupier listing appear in the steps list.
+- Picking a parcel tied to a line by the family position plays that line: on the 1824 plan, parcel 1 plays line A and parcel 2 plays line B (settings tab, one cell per line). The record shows the family position in its own box, marked as not a finding.
+
+### Changed
+- The parcel dropdown lists only numbers something is held for; the five with nothing held (46-49, 51) are left out, with a note saying so.
+- On the 1824 plan the bracket after each number is the name in the plan's own reference table where one is read (1 House, Buildings, Garden & Yard; 2 Orchard; 4 and 7 Wood; 6 strip; 8 Fresh Marsh, meadow; 31 strip south of the church; and others), from a family photograph of the archive screen, so digits are not certain. The map is named "1824 Stewart/Bute plan 19 (Glamorgan Archives DB/E/1)".
+
 ## [3.8.0] - 2026-11-05
 
 ### Changed

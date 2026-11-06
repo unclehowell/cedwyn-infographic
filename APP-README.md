@@ -1,5 +1,7 @@
 # infographic.bucklerfamily.estate — Great House Farm: the land changing hands
 
+v3.9.0 (6 Nov 2026). A parcel database (maps, parcels, title_events, settings) sits in a linked workbook and in public/data/db/; the page reads the workbook on each load and falls back to the committed copy. The dropdown lists only numbers something is held for; on the 1824 plan each bracket is the reference table's own name. 🗺️ Map opens the chosen map cropped to the parcel; Tenants: shown adds the tenancies beside the freehold lines; a parcel tied to line A or B by the family position plays that line (settings tab, one cell per line).
+
 v3.8.0 (5 Nov 2026). The parcel dropdown lists the same 59 numbers on every map (working model, 1824 Stewart plan, 1841 tithe map); the map choice changes which records show beneath a number, never the list, and tithe plot numbers appear inside records only. The dropdown is a custom listbox whose rows carry a real status dot plus a status word: green/concrete where the figure is clearly read in the site's 1824 reading record and the parcel placed, with its record; amber/ambiguous where something is held even if ambiguous; red/none where nothing is held yet. Each number also carries its core identifying trait in brackets from the site's own per-parcel index, with every tithe match marked as the site's own reading. Under the working model the 59 parcels head the list and the ring's own lines sit in a separate group, not matched to parcel numbers.
 
 v3.7.0 (5 Nov 2026). A Map dropdown (working model, 1824 Stewart plan, 1841 tithe plots) sits above the parcel dropdown; the pick draws only what the records tie to it, with text under the diagram.
@@ -21,6 +23,6 @@ Lines (all drawn on load; the replay button draws one again from its start to it
 
 Each year sits where its line arrives. Dashed = the deed or record is not published here. Tap any line, pill or node for its record and sources; the list under the circle repeats the selected line's steps.
 
-Data: `public/data/transfers.json` → `paths` (nodes, segs, filters); `public/data/stewart-parcels.json` → the 1-59 parcel records. Build: `tools/build.py` inlines both into `tools/template.html` and runs the public-words gate. Static, no external assets.
+Data: `public/data/db/*.csv` (maps, parcels, title_events, settings, parties; source.json names the linked workbook and its tab ids) → `public/data/db.json`; `public/data/transfers.json` → `paths` (nodes, segs, filters); `public/data/stewart-parcels.json` → the 1-59 parcel records. Build: `tools/build.py` inlines both into `tools/template.html` and runs the public-words gate. Static, no external assets.
 
 Compiled by Sion's Tab agent.
