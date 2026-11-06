@@ -1,0 +1,6 @@
+# The 1824 Stewart plan parcels, facts and family position side by side.
+query stewartParcels {
+  parcels(map_id: stewart) { parcel_no status known trait family_label family_note evidence_id source
+    map { map_id title year } }
+  settings { key value note }
+}
