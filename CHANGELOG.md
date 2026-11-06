@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.10.0] - 2026-11-06
+
+### Changed
+- The parcel database moved into the repo: `data/maps.json`, `data/parcels.json`, `data/title_events.json`, `data/settings.json` and `data/parties.json`, typed (numbers, true/false, null) and checked against `data/schema.graphql` on every build. Migrated from the committed copy and checked row for row against the linked workbook on 6 Nov 2026: 3 maps, 177 parcel rows, 34 title events, 28 parties, 3 settings, nothing lost (`chain_for_A` = 1, `chain_for_B` = 2; the parcel 1-3 review notes kept). Facts and the family position stay in separate fields.
+- The page no longer reads the Google Sheet. Its data is the build's answer to the persisted query `data/queries/db.graphql`, inlined into the page (no data request on first view) and also published as `public/api/db.json`.
+- `settings` row `sheet_note`: its note now says to edit the row in the repo.
+
+### Added
+- `tools/gql.py`: a small GraphQL subset (schema checks, persisted queries with arguments and nested parties/maps) run at build time; no server.
+- `public/api/title-chain.json` (each title step with its parties) and `public/api/stewart-parcels.json` (the 1824 parcels, facts and family position side by side) for other apps.
+- `public/sw.js`: the page and title-chain/ open at once from the device on repeat visits and work offline; the server copy is revalidated in the background and a "tap to refresh" button appears when a new build lands. The site's own worker runs inside it. `?sw=off` removes it.
+- `.github/workflows/build-data.yml`: an edit to `data/` on GitHub rebuilds and commits the page.
+- `tools/import_sheet.py`: optional one-way import from the old workbook (dry run by default; the repo wins).
+
+### Removed
+- `public/data/db/*.csv`, `public/data/db/source.json` and `public/data/db.json` (replaced by `data/` and `public/api/`). The editor-only `review_flag` notes are no longer sent to the public page.
+
 ## [3.9.0] - 2026-11-06
 
 ### Added
