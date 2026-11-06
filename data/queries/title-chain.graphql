@@ -1,0 +1,5 @@
+# Each title step with its parties resolved (for other apps; read /infographic/api/title-chain.json).
+query titleChain {
+  titleEvents { event_id chain date year interest instrument status drawn evidence_id source_url
+    fromParty { party_id name title } toParty { party_id name title } }
+}

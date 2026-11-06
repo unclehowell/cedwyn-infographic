@@ -1,0 +1,9 @@
+{
+  "type": "Setting",
+  "about": "Edit rows here; tools/build.py checks them against data/schema.graphql and rebuilds the page. Use null for an empty value.",
+  "rows": [
+    {"key": "chain_for_A", "value": 1, "note": "parcel number on the 1824 plan that plays line A (family position)"},
+    {"key": "chain_for_B", "value": 2, "note": "parcel number on the 1824 plan that plays line B; single mapping cell; unresolved between 2 and 3, default 2"},
+    {"key": "sheet_note", "value": null, "note": "edit any row in data/settings.json in the repo; the build recompiles the page"}
+  ]
+}

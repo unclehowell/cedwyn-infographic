@@ -1,0 +1,8 @@
+# The page's own query: everything /infographic/ draws, nothing editor-only (no review_flag).
+# Compiled at build time to public/api/db.json and inlined into index.html.
+query db {
+  maps { map_id year title source evidence_id image crop_x crop_y crop_w crop_h note }
+  parcels { map_id parcel_no status known trait family_label family_note chain alt_chain crop_x crop_y crop_w crop_h mark_x mark_y evidence_id source }
+  title_events: titleEvents { event_id chain parcel_label date year from to interest instrument status evidence_id source source_url drawn note }
+  settings { key value note }
+}

@@ -1,0 +1,100 @@
+# Parcel database for /infographic/ ("Land changing hands").
+# The repo is the source of truth: each @table type is one JSON file under data/ ({"type": ..., "rows": [...]}).
+# tools/build.py checks every row against these types, runs the persisted queries in data/queries/*.graphql
+# and writes the answers to public/api/<query>.json (and inlines the page's own query into index.html).
+# Facts and the family position are kept in separate fields: trait/status/known/source are what the records show;
+# family_label/family_note are the family position and are always shown as such.
+
+enum MapId { model stewart tithe }
+enum ParcelStatus { concrete ambiguous none }
+enum LineStatus { solid dashed }
+enum Drawn { ring list }
+enum PartyKind { named out poo ring shred split }
+
+"A map a parcel number can be read on."
+type Map @table(file: "maps", key: "map_id") {
+  map_id: MapId!
+  year: Int
+  title: String!
+  source: String!
+  evidence_id: String
+  "image URL; crops are fractions (0-1) of its width/height, set by eye"
+  image: String
+  crop_x: Float
+  crop_y: Float
+  crop_w: Float
+  crop_h: Float
+  note: String!
+}
+
+"One parcel number (1-59) as read on one map."
+type Parcel @table(file: "parcels", key: "map_id,parcel_no") {
+  map_id: MapId!
+  parcel_no: Int!
+  status: ParcelStatus!
+  "true when something is held for this number"
+  known: Boolean!
+  "the identifying trait from the records (fact)"
+  trait: String!
+  "family position: the line (A or B) the family reads this parcel as"
+  family_label: String
+  "family position, in words"
+  family_note: String
+  chain: String
+  alt_chain: String
+  crop_x: Float
+  crop_y: Float
+  crop_w: Float
+  crop_h: Float
+  mark_x: Float
+  mark_y: Float
+  evidence_id: String!
+  source: String!
+  "editor-only note; not in the public query"
+  review_flag: String
+  map: Map @ref(table: "maps", from: "map_id", to: "map_id")
+}
+
+"A party on the ring or in the list."
+type Party @table(file: "parties", key: "party_id") {
+  party_id: ID!
+  name: String!
+  kind: PartyKind!
+  title: String!
+}
+
+"A step in a title chain (freehold, registration, tenancy, occupancy, papers)."
+type TitleEvent @table(file: "title_events", key: "event_id") {
+  event_id: ID!
+  chain: String!
+  parcel_label: String!
+  date: String!
+  year: Int
+  from: String!
+  to: String
+  interest: String!
+  instrument: String!
+  status: LineStatus!
+  evidence_id: String
+  source: String!
+  source_url: String
+  drawn: Drawn!
+  note: String
+  fromParty: Party @ref(table: "parties", from: "from", to: "party_id")
+  toParty: Party @ref(table: "parties", from: "to", to: "party_id")
+}
+
+"Single-cell settings (chain_for_A, chain_for_B, ...)."
+type Setting @table(file: "settings", key: "key") {
+  key: ID!
+  value: Int
+  note: String!
+}
+
+type Query {
+  maps(map_id: MapId): [Map!]!
+  parcels(map_id: MapId, parcel_no: Int, status: ParcelStatus): [Parcel!]!
+  titleEvents(chain: String, drawn: Drawn): [TitleEvent!]!
+  parties(kind: PartyKind): [Party!]!
+  settings(key: ID): [Setting!]!
+}
