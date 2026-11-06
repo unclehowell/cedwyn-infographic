@@ -1,0 +1,4 @@
+key,value,note
+chain_for_A,1,parcel number on the 1824 plan that plays line A (family position)
+chain_for_B,2,"parcel number on the 1824 plan that plays line B; single mapping cell; unresolved between 2 and 3, default 2"
+sheet_note,,edit any row; the page reads this workbook on its next load

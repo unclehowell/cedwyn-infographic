@@ -1,0 +1,19 @@
+{
+ "sheet_id": "1UwUs_CkxZ1dSsNwZWbp2vI9TeR_oLPPJNn5SZhAoRNg",
+ "sheet_url": "https://docs.google.com/spreadsheets/d/1UwUs_CkxZ1dSsNwZWbp2vI9TeR_oLPPJNn5SZhAoRNg/edit",
+ "tabs": [
+  "maps",
+  "parcels",
+  "title_events",
+  "settings",
+  "parties"
+ ],
+ "note": "The page reads these tabs as published CSV on each load; this folder is the committed copy it falls back to.",
+ "gids": {
+  "maps": 1728723331,
+  "parcels": 1424590373,
+  "title_events": 1821955350,
+  "parties": 2126462563,
+  "settings": 938231331
+ }
+}
