@@ -1,0 +1,9 @@
+{
+  "type": "Map",
+  "about": "Edit rows here; tools/build.py checks them against data/schema.graphql and rebuilds the page. Use null for an empty value.",
+  "rows": [
+    {"map_id": "model", "year": null, "title": "Working model (not a survey map)", "source": "The ring of title holders on this page", "evidence_id": null, "image": null, "crop_x": null, "crop_y": null, "crop_w": null, "crop_h": null, "note": "The title lines as drawn on the ring; not a survey map."},
+    {"map_id": "stewart", "year": 1824, "title": "1824 Stewart/Bute plan 19 (Glamorgan Archives DB/E/1)", "source": "Glamorgan Archives DB/E/1, plan 19 (David Stewart, surveyor); the copy shown is the uploaded image held as EV-0004", "evidence_id": "EV-0211; EV-0004", "image": "https://cedwyn.bucklerfamily.estate/wayback/images/evidence/1824-00-00_wp87_map-of-ty-mawr-dated-1824-uploaded-image.jpg", "crop_x": 0.0, "crop_y": 0.207, "crop_w": 1.0, "crop_h": 0.436, "note": "The copy shown is the uploaded 1824 map image held as EV-0004. Crops and dots are set by eye and are approximate; a dot marks where the number is written."},
+    {"map_id": "tithe", "year": 1841, "title": "1841 tithe map of Landough, Cogan and Leckwith", "source": "National Library of Wales (Edward Edmunds), with its apportionment", "evidence_id": "EV-0215", "image": null, "crop_x": null, "crop_y": null, "crop_w": null, "crop_h": null, "note": "No image of this map is held on this site yet."}
+  ]
+}
