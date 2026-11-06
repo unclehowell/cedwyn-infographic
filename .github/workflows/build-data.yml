@@ -1,0 +1,31 @@
+name: build-data
+# Rebuild /infographic/ when the data or the build changes: checks every data/*.json row against data/schema.graphql,
+# answers the persisted queries and commits public/index.html, public/sw.js and public/api/*.json. A data problem fails the
+# run with a plain list (the page is left as it was). — Sion's Tab agent
+on:
+  push:
+    branches: [main]
+    paths: ['data/**', 'tools/**', 'public/data/transfers.json', 'public/data/stewart-parcels.json', '.version']
+  pull_request:
+    paths: ['data/**', 'tools/**']
+permissions:
+  contents: write
+concurrency:
+  group: build-data
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - name: Check and build
+        run: python3 tools/build.py
+      - name: Commit the rebuilt page
+        if: github.event_name == 'push'
+        run: |
+          git add public/index.html public/sw.js public/api
+          if git diff --cached --quiet; then echo "page already matches data/"; exit 0; fi
+          git -c user.name="cedwyn-build" -c user.email="actions@users.noreply.github.com" commit -q -m "Rebuild /infographic/ from data/ (${GITHUB_SHA::7})"
+          git push origin HEAD:main
